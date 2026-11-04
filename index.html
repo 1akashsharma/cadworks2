@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAD Works | High-Precision Injection Mould Engineering in Siemens NX</title>
+    <meta name="description" content="Specialized injection mould design engineering, core & cavity assemblies, EDM electrode design, and 2D manufacturing documentation for global manufacturers powered by Siemens NX.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0B1120',
+                        cardBg: '#151F32',
+                        cardHover: '#1E293B',
+                        accentBlue: '#38BDF8',
+                        accentBlueHover: '#0EA5E9',
+                        borderSlate: '#334155'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0B1120; color: #F8FAFC; }
+    </style>
+</head>
+<body class="bg-darkBg text-slate-100 antialiased selection:bg-accentBlue selection:text-darkBg">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-borderSlate">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+            <!-- Brand Logo Image Only -->
+            <a href="#" class="flex items-center group py-2">
+                <img src="IMG_4508.PNG" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x60/0B1120/38BDF8?text=CAD+WORKS';" alt="CAD Works - High-Precision Injection Mould Engineering" class="h-14 sm:h-16 w-auto object-contain">
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#packages" class="hover:text-accentBlue transition">Packages</a>
+                <a href="#services" class="hover:text-accentBlue transition">Capabilities</a>
+                <a href="#portfolio" class="hover:text-accentBlue transition">Sample Portfolio</a>
+                <a href="#about" class="hover:text-accentBlue transition">About</a>
+                <a href="#contact" class="hover:text-accentBlue transition">Contact</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="https://wa.me/918930920869?text=Hi%20CAD%20Works,%20I%20would%20like%20to%20discuss%20an%20injection%20mould%20design%20project." target="_blank" class="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition shadow-lg">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+                </a>
+                <a href="#contact" class="bg-accentBlue hover:bg-accentBlueHover text-darkBg font-semibold px-4 py-2 rounded-lg text-sm transition shadow-lg">
+                    Request Quote
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cardBg border-b border-borderSlate px-4 pt-2 pb-6 space-y-3">
+            <a href="#packages" class="block text-slate-300 hover:text-accentBlue py-1">Packages</a>
+            <a href="#services" class="block text-slate-300 hover:text-accentBlue py-1">Capabilities</a>
+            <a href="#portfolio" class="block text-slate-300 hover:text-accentBlue py-1">Sample Portfolio</a>
+            <a href="#about" class="block text-slate-300 hover:text-accentBlue py-1">About</a>
+            <a href="#contact" class="block text-slate-300 hover:text-accentBlue py-1">Contact</a>
+            <div class="pt-4 flex flex-col gap-3">
+                <a href="https://wa.me/918930920869?text=Hi%20CAD%20Works,%20I%20would%20like%20to%20discuss%20an%20injection%20mould%20design%20project." target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 text-white py-2 rounded-lg text-sm font-medium">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp
+                </a>
+                <a href="#contact" class="flex items-center justify-center bg-accentBlue text-darkBg font-semibold py-2 rounded-lg text-sm">
+                    Request a Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-20 pb-28 overflow-hidden border-b border-borderSlate bg-gradient-to-b from-darkBg to-[#0E1626]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cardBg border border-borderSlate text-xs font-medium text-accentBlue mb-6">
+                    <i class="fa-solid fa-shield-halved"></i> Native Siemens NX Workflows & Strict NDAs
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+                    High-Precision Injection Mould Engineering <span class="text-transparent bg-clip-text bg-gradient-to-r from-accentBlue to-indigo-400">in Siemens NX</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed">
+                    Professional, production-ready plastic injection mould designs tailored for global toolrooms. We deliver complete 3D assemblies, precise core & cavity extractions, slider & lifter mechanisms, and shop-floor manufacturing documentation — engineered entirely in Siemens NX.
+                </p>
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                    <a href="#contact" class="inline-flex justify-center items-center gap-2 bg-accentBlue hover:bg-accentBlueHover text-darkBg font-bold px-8 py-4 rounded-xl transition shadow-xl text-base">
+                        <i class="fa-solid fa-file-invoice-dollar"></i> Request Quote
+                    </a>
+                    <a href="https://wa.me/918930920869?text=Hi%20CAD%20Works,%20I%20would%20like%20to%20discuss%20an%20injection%20mould%20design%20project." target="_blank" class="inline-flex justify-center items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-6 py-4 rounded-xl transition shadow-lg text-base">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Direct WhatsApp Inquiry
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative grid overlay -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#151F32_1px,transparent_1px),linear-gradient(to_bottom,#151F32_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30 pointer-events-none"></div>
+    </section>
+
+    <!-- FOUR SERVICE PACKAGES SECTION -->
+    <section id="packages" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-accentBlue font-semibold text-xs tracking-widest uppercase mb-2 block">Engineering Deliverables</span>
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4">Mould Design Service Packages</h2>
+            <p class="text-slate-400 text-base">Choose specialized engineering deliverables or our comprehensive turnkey package built for complete tool production.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+            <!-- Package 1: Complete Tooling Package (Flagship) -->
+            <div class="bg-cardBg rounded-2xl p-6 border-2 border-accentBlue flex flex-col justify-between relative shadow-2xl">
+                <div class="absolute -top-3 right-4 bg-accentBlue text-darkBg text-[10px] font-extrabold uppercase px-3 py-1 rounded-full tracking-wider">
+                    Flagship
+                </div>
+                <div>
+                    <div class="w-10 h-10 rounded-lg bg-accentBlue text-darkBg flex items-center justify-center text-base font-bold mb-4">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">1. Complete Tooling Package</h3>
+                    <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+                        The ultimate end-to-end engineering package combining 3D assemblies, 2D drawings, thermal regulation, ejection design, electrode data, and structured BOM.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300 mb-6">
+                        <li><i class="fa-solid fa-check text-accentBlue mr-1.5"></i> Complete 3D Assembly (.prt/.x_t)</li>
+                        <li><i class="fa-solid fa-check text-accentBlue mr-1.5"></i> Full 2D Manufacturing Drawings</li>
+                        <li><i class="fa-solid fa-check text-accentBlue mr-1.5"></i> Electrode Data & BOM Integration</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#contact" class="block w-full text-center bg-accentBlue hover:bg-accentBlueHover text-darkBg font-bold py-2.5 rounded-lg text-xs transition shadow-lg">
+                        Select Package
+                    </a>
+                </div>
+            </div>
+
+            <!-- Package 2: 3D Mold Model & Assembly -->
+            <div class="bg-cardBg rounded-2xl p-6 border border-borderSlate flex flex-col justify-between hover:border-accentBlue transition">
+                <div>
+                    <div class="w-10 h-10 rounded-lg bg-accentBlue/10 text-accentBlue flex items-center justify-center text-base font-bold mb-4">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">2. 3D Mold Model & Assembly</h3>
+                    <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+                        Parametric Siemens NX core, cavity, parting line, and mechanism assembly models (.prt and .x_t) for CNC programming.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-400 mb-6">
+                        <li><i class="fa-solid fa-check text-accentBlue mr-1.5"></i> Core & Cavity Parting Architecture</li>
+                        <li><i class="fa-solid fa-check text-accentBlue mr-1.5"></i> Complete Mold Base Assembly</li>
+                        <li><i class="fa-solid fa-check text-accentBlue mr-1.5"></i> Native NX .prt & Parasolid .x_t</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#contact" class="block w-full text-center bg-cardHover hover:bg-borderSlate text-white font-semibold py-2.5 rounded-lg text-xs transition border border-borderSlate">
+                        Select Package
+                    </a>
+                </div>
+            </div>
+
+            <!-- Package 3: 2D Manufacturing Drawing Package -->
+            <div class="bg-cardBg rounded-2xl p-6 border border-borderSlate flex flex-col justify-between hover:border-accentBlue transition">
+                <div>
+                    <div class="w-10 h-10 rounded-lg bg-accentBlue/10 text-accentBlue flex items-center justify-center text-base font-bold mb-4">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">3. 2D Manufacturing Drawing Package</h3>
+                    <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+                        Exhaustive 2D plate detailing, drill coordinate charts, tolerance specifications, surface finish callouts, and released PDF/DXF documentation for CNC toolrooms.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-400 mb-6">
+                        <li><i class="fa-solid fa-check text-accentBlue mr-1.5"></i> Plate & Component Detailing</li>
+                        <li><i class="fa-solid fa-check text-accentBlue mr-1.5"></i> Hole & Thread Coordinate Charts</li>
+                        <li><i class="fa-solid fa-check text-accentBlue mr-1.5"></i> Surface Finish & Tolerances</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#contact" class="block w-full text-center bg-cardHover hover:bg-borderSlate text-white font-semibold py-2.5 rounded-lg text-xs transition border border-borderSlate">
+                        Select Package
+                    </a>
+                </div>
+            </div>
+
+            <!-- Package 4: Precision EDM Electrode Design -->
+            <div class="bg-cardBg rounded-2xl p-6 border border-borderSlate flex flex-col justify-between hover:border-accentBlue transition">
+                <div>
+                    <div class="w-10 h-10 rounded-lg bg-accentBlue/10 text-accentBlue flex items-center justify-center text-base font-bold mb-4">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">4. Precision EDM Electrode Design</h3>
+                    <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+                        Specialized copper electrode extraction, spark erosion (EDM) detailing, burn-gap mapping, and coordinate references for deep ribs and complex pockets.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-400 mb-6">
+                        <li><i class="fa-solid fa-check text-accentBlue mr-1.5"></i> Rib & Pocket Electrode Extraction</li>
+                        <li><i class="fa-solid fa-check text-accentBlue mr-1.5"></i> Burn Gap & Clearance Allocation</li>
+                        <li><i class="fa-solid fa-check text-accentBlue mr-1.5"></i> Holder & Datum References</li>
+                    </ul>
+                </div>
+                <div>
+                    <a href="#contact" class="block w-full text-center bg-cardHover hover:bg-borderSlate text-white font-semibold py-2.5 rounded-lg text-xs transition border border-borderSlate">
+                        Select Package
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO PREVIEW SECTION -->
+    <section id="portfolio" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-borderSlate">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-accentBlue font-semibold text-xs tracking-widest uppercase mb-2 block">Technical Gallery</span>
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4">Engineering Sample Portfolio</h2>
+            <p class="text-slate-400 text-base">Illustrative CAD visualization samples representing our modeling methodology and manufacturing documentation standards.</p>
+            <p class="text-xs text-amber-400/90 mt-2 bg-amber-950/30 border border-amber-800/50 py-1.5 px-4 rounded-lg inline-block">
+                <i class="fa-solid fa-circle-exclamation mr-1"></i> Due to strict NDAs, all portfolio items shown below are labeled as technical sample designs.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1: 3D Assembly -->
+            <div class="bg-cardBg rounded-2xl border border-borderSlate overflow-hidden group hover:border-accentBlue transition duration-300">
+                <div class="h-52 bg-[#0E1626] relative overflow-hidden">
+                    <img src="https://cdn.cadcrowd.com/3d-models/a6/44/a6440128-c819-4d17-94de-ae779e29026e/gallery/97fa8c07-6d6d-49cb-bf8c-9314368ba198/medium.jpg" alt="Automotive Housing Tool Assembly 3D CAD" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+                    <span class="absolute top-3 left-3 bg-darkBg/90 text-accentBlue text-[10px] font-bold px-2.5 py-1 rounded border border-borderSlate shadow-md">Sample Design</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-white text-lg mb-1">Automotive Housing Tool Assembly</h3>
+                    <p class="text-xs text-slate-400 mb-4">Multi-slide tool assembly featuring integrated cooling circuits and split-line architecture.</p>
+                    <span class="text-xs text-accentBlue font-medium">Siemens NX Native Assembly</span>
+                </div>
+            </div>
+
+            <!-- Card 2: Core & Cavity -->
+            <div class="bg-cardBg rounded-2xl border border-borderSlate overflow-hidden group hover:border-accentBlue transition duration-300">
+                <div class="h-52 bg-[#0E1626] relative overflow-hidden">
+                    <img src="https://firstmold.com/wp-content/uploads/2023/05/mold-core-and-mold-cavity-featured-image.jpg" alt="Core and Cavity Steel Inserts Layout" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+                    <span class="absolute top-3 left-3 bg-darkBg/90 text-accentBlue text-[10px] font-bold px-2.5 py-1 rounded border border-borderSlate shadow-md">Sample Design</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-white text-lg mb-1">Core & Cavity Insert Layout</h3>
+                    <p class="text-xs text-slate-400 mb-4">Precision parting line shut-offs and complex contour machining inserts.</p>
+                    <span class="text-xs text-accentBlue font-medium">Tool Steel Specification</span>
+                </div>
+            </div>
+
+            <!-- Card 3: EDM Electrodes -->
+            <div class="bg-cardBg rounded-2xl border border-borderSlate overflow-hidden group hover:border-accentBlue transition duration-300">
+                <div class="h-52 bg-[#0E1626] relative overflow-hidden">
+                    <img src="https://www.fictiv.com/wp-content/uploads/2021/10/image1-wbp.webp" alt="Copper EDM Electrodes 3D CAD" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+                    <span class="absolute top-3 left-3 bg-darkBg/90 text-accentBlue text-[10px] font-bold px-2.5 py-1 rounded border border-borderSlate shadow-md">Sample Design</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-white text-lg mb-1">EDM Electrode Design</h3>
+                    <p class="text-xs text-slate-400 mb-4">Rib and deep-pocket copper electrodes with burn gap allowance and datums.</p>
+                    <span class="text-xs text-accentBlue font-medium">Machining Documentation</span>
+                </div>
+            </div>
+
+            <!-- Card 4: 2D Manufacturing Drawings (AutoCAD 2D Style) -->
+            <div class="bg-cardBg rounded-2xl border border-borderSlate overflow-hidden group hover:border-accentBlue transition duration-300">
+                <div class="h-52 bg-[#0E1626] relative overflow-hidden">
+                    <img src="https://www.researchgate.net/publication/323278113/figure/fig1/AS:666258559205377@1535859827589/Engineering-2D-drawing-of-the-family-mould-a-core-plate-b-cavity-plate.png" alt="2D Engineering Manufacturing Drawing DXF PDF" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+                    <span class="absolute top-3 left-3 bg-darkBg/90 text-accentBlue text-[10px] font-bold px-2.5 py-1 rounded border border-borderSlate shadow-md">Sample Design</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-white text-lg mb-1">2D Manufacturing Drawings</h3>
+                    <p class="text-xs text-slate-400 mb-4">Fully detailed plate detailing, surface finishes, and tolerance callouts.</p>
+                    <span class="text-xs text-accentBlue font-medium">Released PDF & DXF</span>
+                </div>
+            </div>
+
+            <!-- Card 5: Slider & Lifter Mechanism -->
+            <div class="bg-cardBg rounded-2xl border border-borderSlate overflow-hidden group hover:border-accentBlue transition duration-300">
+                <div class="h-52 bg-[#0E1626] relative overflow-hidden">
+                    <img src="https://www.boyiprototyping.com/wp-content/uploads/2024/05/Injection-Molding-Lifters-Working-Principle-1024x621.webp" alt="Injection Molding Lifter Mechanism CAD" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+                    <span class="absolute top-3 left-3 bg-darkBg/90 text-accentBlue text-[10px] font-bold px-2.5 py-1 rounded border border-borderSlate shadow-md">Sample Design</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-white text-lg mb-1">Slider & Lifter Assemblies</h3>
+                    <p class="text-xs text-slate-400 mb-4">External undercut mechanisms with angled pin calculations and wear pads.</p>
+                    <span class="text-xs text-accentBlue font-medium">Kinematic Clearance Check</span>
+                </div>
+            </div>
+
+            <!-- Card 6: Cooling Circuit Layout (Mold Design Assembly Circuit) -->
+            <div class="bg-cardBg rounded-2xl border border-borderSlate overflow-hidden group hover:border-accentBlue transition duration-300">
+                <div class="h-52 bg-[#0E1626] relative overflow-hidden">
+                    <img src="https://www.researchgate.net/publication/388442081/figure/fig2/AS:11431281407506947@1745771584379/CAD-showing-a-design-of-conformal-cooling-channel-used-in-injection-molding-produced-via.tif" alt="3D Conformal Cooling Circuit Channel CAD" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90 group-hover:opacity-100">
+                    <span class="absolute top-3 left-3 bg-darkBg/90 text-accentBlue text-[10px] font-bold px-2.5 py-1 rounded border border-borderSlate shadow-md">Sample Design</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-white text-lg mb-1">Cooling Circuit Layout</h3>
+                    <p class="text-xs text-slate-400 mb-4">Optimized thermal regulation channels around core and cavity contours.</p>
+                    <span class="text-xs text-accentBlue font-medium">Baffle & Plug Mapping</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-cardBg/30 border-t border-b border-borderSlate">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">About CAD Works</h2>
+                <p class="text-slate-300 text-base leading-relaxed mb-6">
+                    CAD Works is a specialized engineering design practice dedicated exclusively to plastic injection mould design and manufacturing documentation. Operating 100% remotely, we bridge the gap between initial product concept and shop-floor tool execution, providing mould makers worldwide with robust, error-free 3D assemblies and rigorous 2D detailing using Siemens NX.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left mt-10">
+                    <div class="p-5 rounded-xl bg-cardBg border border-borderSlate">
+                        <h4 class="font-bold text-white mb-1"><i class="fa-solid fa-bullseye text-accentBlue mr-2"></i> Focus</h4>
+                        <p class="text-xs text-slate-400">Injection mould design and engineering documentation only.</p>
+                    </div>
+                    <div class="p-5 rounded-xl bg-cardBg border border-borderSlate">
+                        <h4 class="font-bold text-white mb-1"><i class="fa-solid fa-globe text-accentBlue mr-2"></i> Remote Operation</h4>
+                        <p class="text-xs text-slate-400">Seamless digital transfer of CAD data and documentation globally.</p>
+                    </div>
+                    <div class="p-5 rounded-xl bg-cardBg border border-borderSlate">
+                        <h4 class="font-bold text-white mb-1"><i class="fa-solid fa-handshake text-accentBlue mr-2"></i> Reliability</h4>
+                        <p class="text-xs text-slate-400">Continuous technical support until tool sign-off.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & RFQ SECTION -->
+    <section id="contact" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div>
+                <span class="text-accentBlue font-semibold text-xs tracking-widest uppercase mb-2 block">Get in Touch</span>
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-6">Start Your Mould Design Project</h2>
+                <p class="text-slate-300 text-base leading-relaxed mb-8">
+                    Send us your product 3D model (.step / .iges) and project requirements. We will review your DFM specifications and provide a detailed engineering quotation promptly.
+                </p>
+
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-cardBg border border-borderSlate flex items-center justify-center text-accentBlue text-lg">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 block">Direct Inquiry Email</span>
+                            <span class="text-white font-medium">info@cadworks.cc</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-cardBg border border-borderSlate flex items-center justify-center text-emerald-500 text-xl">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 block">WhatsApp Business</span>
+                            <span class="text-white font-medium">+91 89309 20869</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-cardBg border border-borderSlate flex items-center justify-center text-accentBlue text-lg">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 block">Service Delivery</span>
+                            <span class="text-white font-medium">100% Remote Global Engineering Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Quick Action Box -->
+                <div class="mt-8 p-6 rounded-2xl bg-emerald-950/20 border border-emerald-800/40">
+                    <h4 class="font-bold text-white text-sm mb-2"><i class="fa-brands fa-whatsapp text-emerald-400 mr-2 text-lg"></i> Need an immediate consultation?</h4>
+                    <p class="text-xs text-slate-300 mb-4">Chat directly with our lead design engineers via WhatsApp for quick project feasibility reviews.</p>
+                    <a href="https://wa.me/918930920869?text=Hi%20CAD%20Works,%20I%20would%20like%20to%20discuss%20an%20injection%20mould%20design%20project." target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition">
+                        Open WhatsApp Chat <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- RFQ Form Card -->
+            <div class="bg-cardBg rounded-3xl p-8 border border-borderSlate shadow-2xl">
+                <h3 class="text-xl font-bold text-white mb-6">Request for Quotation (RFQ)</h3>
+                <form action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data" class="space-y-5">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1.5">Your Name *</label>
+                            <input type="text" name="name" required class="w-full bg-darkBg border border-borderSlate rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-accentBlue" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1.5">Company Name *</label>
+                            <input type="text" name="company" required class="w-full bg-darkBg border border-borderSlate rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-accentBlue" placeholder="Mould Tech Industries">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1.5">Business Email *</label>
+                            <input type="email" name="email" required class="w-full bg-darkBg border border-borderSlate rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-accentBlue" placeholder="john@company.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1.5">Package Required *</label>
+                            <select name="service" class="w-full bg-darkBg border border-borderSlate rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-accentBlue">
+                                <option>1. Complete Tooling Package (Flagship)</option>
+                                <option>2. 3D Mold Model & Assembly</option>
+                                <option>3. 2D Manufacturing Drawing Package</option>
+                                <option>4. Precision EDM Electrode Design</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1.5">Project Details / Specifications *</label>
+                        <textarea name="message" rows="4" required class="w-full bg-darkBg border border-borderSlate rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-accentBlue" placeholder="Describe component application, material, cavity count, runner type, and any specific tooling standards..."></textarea>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-slate-300 mb-1.5">Attach Part Model / Zip File (Optional)</label>
+                        <input type="file" name="attachment" class="w-full bg-darkBg border border-borderSlate rounded-xl px-4 py-2.5 text-xs text-slate-400 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-xs file:font-semibold file:bg-accentBlue/20 file:text-accentBlue hover:file:bg-accentBlue/30">
+                    </div>
+
+                    <button type="submit" class="w-full bg-accentBlue hover:bg-accentBlueHover text-darkBg font-bold py-4 rounded-xl text-sm transition shadow-lg">
+                        Submit Project Inquiry
+                    </button>
+
+                    <p class="text-[11px] text-slate-400 text-center">
+                        <i class="fa-solid fa-lock text-slate-500 mr-1"></i> Strict confidentiality maintained. Non-Disclosure Agreements (NDAs) available upon request.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-darkBg border-t border-borderSlate py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div>
+                <p class="text-sm font-bold text-white">CAD Works</p>
+                <p class="text-xs text-slate-400 mt-1">Specialized Injection Mould Engineering & Design Services</p>
+            </div>
+            <p class="text-xs text-slate-500">© 2026 CAD Works. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
